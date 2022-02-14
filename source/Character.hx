@@ -534,13 +534,6 @@ class Character extends FlxSprite
 				antialiasing = false;
 
 			case 'parents-christmas':
-			if (!splitassets_isenabled)
-			  {
-				var tex = Paths.getSparrowAtlas('christmas/mom_dad_christmas_assets');
-			    frames = tex;
-			  }
-			else
-        {
         var tex = Paths.getSparrowAtlas('christmas/mom_dad_christmas_idle');
         var tex2 = Paths.getSparrowAtlas('christmas/parents_dad_down');
         var tex3 = Paths.getSparrowAtlas('christmas/parents_dad_left');
@@ -551,7 +544,8 @@ class Character extends FlxSprite
         var tex8 = Paths.getSparrowAtlas('christmas/parents_mom_up');
         
         tex = jointex(tex, jointex(tex2, jointex(tex3, jointex(tex4, jointex(tex5, jointex(tex6, jointex(tex7, tex8)))))));
-        }
+
+frames = tex;
 				//setGraphicSize(Std.int(width * 2));
 				//updateHitbox();
 
