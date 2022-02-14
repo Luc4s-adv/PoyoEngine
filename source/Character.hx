@@ -552,8 +552,6 @@ class Character extends FlxSprite
         
         tex = jointex(tex, jointex(tex2, jointex(tex3, jointex(tex4, jointex(tex5, jointex(tex6, jointex(tex7, tex8)))))));
         }
-				
-				frames = tex;
 				//setGraphicSize(Std.int(width * 2));
 				//updateHitbox();
 
